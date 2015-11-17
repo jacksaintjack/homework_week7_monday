@@ -123,11 +123,18 @@ header{
 
     #company, #location, #dateJoined{
       font-size:0.9em;
+      width:80%;
     }
 
     #location{
     padding-left:1%;
   }
+}
+  #userJoinInformation{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #eee;
+    margin:0;
   }
   .stats{
     @include span-columns(12);
@@ -412,4 +419,9 @@ header{
   }
   #largeAvatar{
     background-image: url('https://avatars2.githubusercontent.com/u/9700459?v=3&s=460');
+  }
+
+  #company, #location, #dateJoined{
+    font-size:0.9em;
+    width:80%;
   }
