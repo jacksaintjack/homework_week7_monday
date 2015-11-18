@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import UserInfoList from './UserInfoList';
 import JoinInfo from './joininfo';
+import FollowerView from './followerinformation';
 
 
 //For UserInformation
@@ -29,6 +30,7 @@ class UserInfomation extends React.Component {
     )
   }
 }
+
 //Joint information
 class JointJoin extends React.Component {
   constructor(props) {
@@ -74,7 +76,7 @@ class FollowJoin extends React.Component {
 }
   render(){
     return(
-      <FollowJoin users={this.state.users} />
+      <FollowerView users={this.state.users} />
     )
   }
 }
@@ -90,6 +92,12 @@ ReactDOM.render(
   document.getElementById('userJoinInformation')
 );
 
+ReactDOM.render(
+  <FollowJoin/>,
+  document.getElementById('stats')
+);
+
 
 export default UserInfomation;
 export default JointJoin;
+export default FollowJoin;

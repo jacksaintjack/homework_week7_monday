@@ -38,14 +38,7 @@
           <section id="userJoinInformation">
           </section>
 
-            <section class="stats">
-              <div id="followers"></div>
-
-              <div class="starred">0</br>
-                <a href="https://api.github.com/users/jacksaintjack/starred">Starred</a>
-              </div>
-
-              <div id="following"></div>
+            <section class="stats" id="stats">
             </section>
 
             <section class="organizations">
@@ -128,17 +121,6 @@
 
       <script type='text/template' id ="projectTemplate">
         <div id="projectBox">
-          <li>
-            <a href > </a>
-            <!-- <a href =  <%= html_url %> > <%= name %>  </a> -->
-            <li id="stats"> <!-- %= language %> -->
-              <!-- <span class="octicon octicon-star starIcon"></span>
-              <span> <%= stargazers_count %></span>
-              <span class="octicon octicon-git-branch branchIcon"></span>
-              <span> <%= forks_count %></span> -->
-            </li>
-            <!-- <span class="updatedTime"> Updated<%= " " + moment(updated_at).fromNow() %> </span> -->
-          </li>
         </div>
       </script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>

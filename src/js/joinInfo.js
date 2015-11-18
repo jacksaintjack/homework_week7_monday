@@ -14,8 +14,8 @@ class JoinInfo extends React.Component {
         </span><br />
         <span>
           <span className="octicon octicon-clock octi"></span>
-          <span> Joined on</span>
-            <span id="dateJoined">{this.props.users.created_at}</span>
+          <span> Joined on </span>
+            <span id="dateJoined">{moment(" " +this.props.users.created_at).format('ll')}</span>
         </span>
       </span>
     )
