@@ -1,5 +1,9 @@
 # Created by https://www.gitignore.io
 
+### Token ###
+token.js
+
+
 ### Bower ###
 bower_components
 .bower-cache
